@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ਗੌਰਬ CSC ਸੇਵਾਵਾਂ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Dropdown toggle
+    function toggleDropdown(id) {
+      document.getElementById(id).classList.toggle("hidden");
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white shadow sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl md:text-2xl font-bold flex items-center gap-2">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="CSC" class="w-6 h-6 md:w-8 md:h-8">
+        ਗੌਰਬ CSC ਸੇਵਾਵਾਂ
+      </h1>
+      <nav>
+        <ul class="flex space-x-4 md:space-x-6 text-sm md:text-base">
+          <li><a href="#services" class="hover:text-yellow-300">ਸੇਵਾਵਾਂ</a></li>
+          <li><a href="#about" class="hover:text-yellow-300">ਮੇਰੇ ਬਾਰੇ</a></li>
+          <li><a href="#contact" class="hover:text-yellow-300">ਸੰਪਰਕ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-50 py-10 md:py-16">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8 px-4">
+      <div class="text-center md:text-left max-w-xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-700 leading-tight">
+          ਤੁਹਾਡਾ ਇਕ-ਸਥਾਨ CSC ਹੱਲ
+        </h2>
+        <p class="mt-3 md:mt-4 text-base md:text-lg text-gray-600">
+          ਪੈਨ, ਪਾਸਪੋਰਟ, ਲਾਇਸੈਂਸ, ਬੈਂਕਿੰਗ, ਬੀਮਾ, ਡਿਜ਼ਿਟਲ ਸੇਵਾਵਾਂ ਅਤੇ ਹੋਰ।
+        </p>
+        <a href="#contact" class="mt-5 inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 text-sm md:text-base">
+          ਹੁਣੇ ਸੰਪਰਕ ਕਰੋ
+        </a>
+      </div>
+      <div class="w-full md:w-1/2">
+        <img src="https://images.unsplash.com/photo-1556741533-f6acd647d2fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+             alt="CSC Services" class="rounded-xl shadow-lg w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-12 md:py-16 container mx-auto px-4">
+    <h3 class="text-2xl md:text-3xl font-bold text-center text-blue-700 mb-8 md:mb-10">ਸਾਡੀਆਂ ਸੇਵਾਵਾਂ</h3>
+    
+    <div class="space-y-5 md:space-y-6">
+
+      <!-- Financial Services -->
+      <div class="bg-white rounded-xl shadow p-4 md:p-6 flex items-start gap-3 md:gap-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135673.png" class="w-10 h-10 md:w-12 md:h-12" alt="Finance">
+        <div class="flex-1">
+          <button onclick="toggleDropdown('finance-services')" class="w-full flex justify-between items-center text-base md:text-lg font-semibold text-blue-600">
+            ਵਿੱਤੀ ਸੇਵਾਵਾਂ
+            <span>▼</span>
+          </button>
+          <ul id="finance-services" class="hidden mt-2 md:mt-3 text-gray-700 list-disc list-inside text-sm md:text-base">
+            <li>ਬੈਂਕਿੰਗ ਸੇਵਾਵਾਂ</li>
+            <li>ਬੀਮਾ ਸੇਵਾਵਾਂ</li>
+            <li>ਪੈਨਸ਼ਨ ਸੇਵਾਵਾਂ</li>
+            <li>ਕਰਜ਼ਾ ਅਰਜ਼ੀਆਂ</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Government Services -->
+      <div class="bg-white rounded-xl shadow p-4 md:p-6 flex items-start gap-3 md:gap-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/942/942799.png" class="w-10 h-10 md:w-12 md:h-12" alt="Government">
+        <div class="flex-1">
+          <button onclick="toggleDropdown('govt-services')" class="w-full flex justify-between items-center text-base md:text-lg font-semibold text-blue-600">
+            ਸਰਕਾਰੀ ਸੇਵਾਵਾਂ
+            <span>▼</span>
+          </button>
+          <ul id="govt-services" class="hidden mt-2 md:mt-3 text-gray-700 list-disc list-inside text-sm md:text-base">
+            <li>ਪੈਨ ਕਾਰਡ ਅਰਜ਼ੀ</li>
+            <li>ਪਾਸਪੋਰਟ ਅਰਜ਼ੀ</li>
+            <li>ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਅਰਜ਼ੀ</li>
+            <li>ਵੋਟਰ ਆਈਡੀ ਸੇਵਾਵਾਂ</li>
+            <li>ਜਨਮ/ਮੌਤ ਸਰਟੀਫਿਕੇਟ</li>
+            <li>ਬਿੱਲ ਭੁਗਤਾਨ</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Digital Services -->
+      <div class="bg-white rounded-xl shadow p-4 md:p-6 flex items-start gap-3 md:gap-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" class="w-10 h-10 md:w-12 md:h-12" alt="Digital">
+        <div class="flex-1">
+          <button onclick="toggleDropdown('digital-services')" class="w-full flex justify-between items-center text-base md:text-lg font-semibold text-blue-600">
+            ਡਿਜ਼ਿਟਲ ਸੇਵਾਵਾਂ
+            <span>▼</span>
+          </button>
+          <ul id="digital-services" class="hidden mt-2 md:mt-3 text-gray-700 list-disc list-inside text-sm md:text-base">
+            <li>ਆਧਾਰ ਸੇਵਾਵਾਂ</li>
+            <li>ਡਿਜ਼ਿਟਲ ਸਿੱਖਿਆ</li>
+            <li>ਮੋਬਾਈਲ/ਡੀਟੀਐਚ ਰੀਚਾਰਜ</li>
+            <li>ਰੇਲਵੇ/ਬੱਸ ਟਿਕਟ ਬੁਕਿੰਗ</li>
+            <li>ਈ-ਜ਼ਿਲ੍ਹਾ ਸੇਵਾਵਾਂ</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- E-Governance -->
+      <div class="bg-white rounded-xl shadow p-4 md:p-6 flex items-start gap-3 md:gap-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/942/942799.png" class="w-10 h-10 md:w-12 md:h-12" alt="E-Gov">
+        <div class="flex-1">
+          <button onclick="toggleDropdown('egov-services')" class="w-full flex justify-between items-center text-base md:text-lg font-semibold text-blue-600">
+            ਈ-ਗਵਰਨੈਂਸ ਸੇਵਾਵਾਂ
+            <span>▼</span>
+          </button>
+          <ul id="egov-services" class="hidden mt-2 md:mt-3 text-gray-700 list-disc list-inside text-sm md:text-base">
+            <li>ਆਮਦਨੀ/ਡੋਮਿਸਾਈਲ ਸਰਟੀਫਿਕੇਟ</li>
+            <li>ਜਾਤੀ ਸਰਟੀਫਿਕੇਟ</li>
+            <li>ਰਾਸ਼ਨ ਕਾਰਡ ਸੇਵਾਵਾਂ</li>
+            <li>ਜ਼ਮੀਨ ਰਿਕਾਰਡ</li>
+            <li>ਮਿਊਂਸਪਲਟੀ ਸੇਵਾਵਾਂ</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-gray-100 py-12 md:py-16">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-6 md:gap-8">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h3 class="text-2xl md:text-3xl font-bold text-blue-700 mb-4 md:mb-6">ਮੇਰੇ ਬਾਰੇ</h3>
+        <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+          ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਮੈਂ <strong>ਗੌਰਬ</strong> ਹਾਂ।  
+          ਮੈਂ ਭਰੋਸੇਮੰਦ CSC ਅਤੇ ਸਰਕਾਰੀ ਸੇਵਾਵਾਂ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹਾਂ।  
+          ਮੇਰਾ ਮਕਸਦ ਲੋਕਾਂ ਲਈ ਸਰਕਾਰੀ ਪ੍ਰਕਿਰਿਆਵਾਂ ਨੂੰ ਸੌਖਾ, ਪਾਰਦਰਸ਼ੀ ਅਤੇ ਪਹੁੰਚਯੋਗ ਬਣਾਉਣਾ ਹੈ।  
+        </p>
+      </div>
+      <div class="md:w-1/2 w-full">
+        <img src="https://images.unsplash.com/photo-1581092916543-450a8f03a91b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+             alt="About Gaurab" class="rounded-xl shadow-lg w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-12 md:py-16 container mx-auto px-4 text-center">
+    <h3 class="text-2xl md:text-3xl font-bold text-blue-700 mb-6 md:mb-10">ਸੰਪਰਕ ਕਰੋ</h3>
+    <p class="text-gray-700 mb-5 md:mb-6 text-sm md:text-base">ਵਟਸਐਪ ਜਾਂ ਕਾਲ ਰਾਹੀਂ ਸੰਪਰਕ ਕਰੋ</p>
+    <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-6">
+      <a href="https://wa.me/919876543210" target="_blank" class="bg-green-500 text-white px-5 py-3 rounded-lg shadow hover:bg-green-600 flex items-center justify-center gap-2 text-sm md:text-base">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="w-5 h-5"> ਵਟਸਐਪ
+      </a>
+      <a href="tel:+919876543210" class="bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 flex items-center justify-center gap-2 text-sm md:text-base">
+        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" class="w-5 h-5"> ਕਾਲ ਕਰੋ
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center p-3 md:p-4 text-sm md:text-base">
+    <p>&copy; 2025 ਗੌਰਬ CSC ਸੇਵਾਵਾਂ. ਸਾਰੇ ਅਧਿਕਾਰ ਰਾਖਵੇਂ ਹਨ।</p>
+  </footer>
+
+</body>
+</html>
